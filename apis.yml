@@ -1,8 +1,24 @@
 aid: virtela
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/virtela.png
 name: Virtela
-description: 'Virtela is a company surfaced as a portfolio company of norwest-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Virtela was a managed network and cloud-based networking/security services
+  company, surfaced in the API Evangelist network as a portfolio lead of Norwest Venture
+  Partners. Enrichment probing on 2026-07-21 found that virtela.com now redirects to
+  NTT Global (www.nttglobal.net) — the Virtela brand has been absorbed by NTT and operates
+  no independent developer program, public API, or documentation surface. No OpenAPI,
+  well-known metadata, llms.txt, packages, or MCP server were discoverable; the well-known
+  and llms/openapi probe paths all soft-404 to the NTT marketing HTML page.'
 url: https://raw.githubusercontent.com/api-evangelist/virtela/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +26,19 @@ x-backed-by:
 - norwest-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: absorbed
+x-status-note: 'virtela.com redirects to https://www.nttglobal.net/ (NTT Global); brand
+  no longer independently operated.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-- Unknown
+- Networking
+- Managed Services
+- Cloud Networking
+- Acquired
+- NTT
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +48,10 @@ maintainers:
 common:
 - type: Website
   url: https://virtela.com
+- type: Website
+  url: https://www.nttglobal.net/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v1
